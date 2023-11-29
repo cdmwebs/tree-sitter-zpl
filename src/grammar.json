@@ -1,0 +1,209 @@
+{
+  "name": "zpl",
+  "rules": {
+    "source_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "_definition"
+      }
+    },
+    "_definition": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "function_definition"
+        }
+      ]
+    },
+    "symbol": {
+      "type": "STRING",
+      "value": "^"
+    },
+    "function_definition": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "symbol"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "command"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "parameter_list"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "parameter_list": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "parameter"
+            },
+            {
+              "type": "REPEAT",
+              "content": {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": ","
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "parameter"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "parameter": {
+      "type": "PATTERN",
+      "value": "[^\\^]+"
+    },
+    "command": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "BC"
+        },
+        {
+          "type": "STRING",
+          "value": "BD"
+        },
+        {
+          "type": "STRING",
+          "value": "BQ"
+        },
+        {
+          "type": "STRING",
+          "value": "BY"
+        },
+        {
+          "type": "STRING",
+          "value": "CF"
+        },
+        {
+          "type": "STRING",
+          "value": "CI"
+        },
+        {
+          "type": "STRING",
+          "value": "CT"
+        },
+        {
+          "type": "STRING",
+          "value": "CV"
+        },
+        {
+          "type": "STRING",
+          "value": "FB"
+        },
+        {
+          "type": "STRING",
+          "value": "FC"
+        },
+        {
+          "type": "STRING",
+          "value": "FD"
+        },
+        {
+          "type": "STRING",
+          "value": "FO"
+        },
+        {
+          "type": "STRING",
+          "value": "FS"
+        },
+        {
+          "type": "STRING",
+          "value": "FV"
+        },
+        {
+          "type": "STRING",
+          "value": "FW"
+        },
+        {
+          "type": "STRING",
+          "value": "FX"
+        },
+        {
+          "type": "STRING",
+          "value": "GB"
+        },
+        {
+          "type": "STRING",
+          "value": "GF"
+        },
+        {
+          "type": "STRING",
+          "value": "LL"
+        },
+        {
+          "type": "STRING",
+          "value": "LH"
+        },
+        {
+          "type": "STRING",
+          "value": "LS"
+        },
+        {
+          "type": "STRING",
+          "value": "PQ"
+        },
+        {
+          "type": "STRING",
+          "value": "PO"
+        },
+        {
+          "type": "STRING",
+          "value": "PW"
+        },
+        {
+          "type": "STRING",
+          "value": "XA"
+        },
+        {
+          "type": "STRING",
+          "value": "XZ"
+        },
+        {
+          "type": "STRING",
+          "value": "A"
+        }
+      ]
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}
+

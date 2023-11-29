@@ -1,0 +1,95 @@
+==================
+Commands with no arguments
+==================
+
+^FD
+
+---
+
+(source_file
+  (function_definition
+		(symbol)
+    (command)))
+
+==================
+Commands with one argument
+==================
+
+^FD50
+
+---
+
+(source_file
+  (function_definition
+    (symbol)
+		(command)
+		(parameter_list
+			(parameter))))
+
+==================
+Commands with two arguments
+==================
+
+^FD50,50
+
+---
+
+(source_file
+  (function_definition
+		(symbol)
+		(command)
+		(parameter_list
+			(parameter)
+			(parameter))))
+
+==================
+Complex commands
+==================
+
+^FD50,50^FS
+
+---
+
+(source_file
+	(function_definition
+		(symbol)
+		(command)
+		(parameter_list
+			(parameter)
+			(parameter)))
+	(function_definition
+		(symbol)
+		(command)))
+
+
+==================
+Commands with multiple arguments and nesting
+==================
+
+^FO50,50^ADN,36,20^FDChris Moore^FS
+
+---
+
+(source_file
+	(function_definition
+		(symbol)
+		(command)
+		(parameter_list
+			(parameter)
+			(parameter)))
+	(function_definition
+		(symbol)
+		(command)
+		(parameter_list
+			(parameter)
+			(parameter)
+			(parameter)
+			(parameter)))
+	(function_definition
+		(symbol)
+		(command)
+		(parameter_list
+			(parameter)))
+	(function_definition
+		(symbol)
+		(command)))

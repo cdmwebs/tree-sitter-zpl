@@ -1,0 +1,2 @@
+(command) @keyword
+(parameter) @parameter

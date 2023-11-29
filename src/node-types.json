@@ -1,0 +1,180 @@
+[
+  {
+    "type": "command",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "function_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "parameter",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "function_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "A",
+    "named": false
+  },
+  {
+    "type": "BC",
+    "named": false
+  },
+  {
+    "type": "BD",
+    "named": false
+  },
+  {
+    "type": "BQ",
+    "named": false
+  },
+  {
+    "type": "BY",
+    "named": false
+  },
+  {
+    "type": "CF",
+    "named": false
+  },
+  {
+    "type": "CI",
+    "named": false
+  },
+  {
+    "type": "CT",
+    "named": false
+  },
+  {
+    "type": "CV",
+    "named": false
+  },
+  {
+    "type": "FB",
+    "named": false
+  },
+  {
+    "type": "FC",
+    "named": false
+  },
+  {
+    "type": "FD",
+    "named": false
+  },
+  {
+    "type": "FO",
+    "named": false
+  },
+  {
+    "type": "FS",
+    "named": false
+  },
+  {
+    "type": "FV",
+    "named": false
+  },
+  {
+    "type": "FW",
+    "named": false
+  },
+  {
+    "type": "FX",
+    "named": false
+  },
+  {
+    "type": "GB",
+    "named": false
+  },
+  {
+    "type": "GF",
+    "named": false
+  },
+  {
+    "type": "LH",
+    "named": false
+  },
+  {
+    "type": "LL",
+    "named": false
+  },
+  {
+    "type": "LS",
+    "named": false
+  },
+  {
+    "type": "PO",
+    "named": false
+  },
+  {
+    "type": "PQ",
+    "named": false
+  },
+  {
+    "type": "PW",
+    "named": false
+  },
+  {
+    "type": "XA",
+    "named": false
+  },
+  {
+    "type": "XZ",
+    "named": false
+  },
+  {
+    "type": "parameter",
+    "named": true
+  },
+  {
+    "type": "symbol",
+    "named": true
+  }
+]
